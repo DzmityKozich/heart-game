@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Honk&family=Single+Day&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="counter">
+      0
+    </div>
+  </div>
+
+  <template id="heart-template">
+    <div class="heart">
+      <svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="drop-shadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="0.7" flood-color="#000" />
+          </filter>
+        </defs>
+        <path
+          d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z"
+          filter="url(#drop-shadow)" />
+      </svg>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
